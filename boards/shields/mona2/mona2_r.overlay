@@ -48,6 +48,12 @@
 
     trackball_central: trackball_central@0 {
         status = "okay";
+#ifdef CONFIG_TRACKBALL_PAW3222
+        compatible = "pixart,paw3222";
+        reg = <0>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+#else /* default: PMW3610 */
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
@@ -55,10 +61,11 @@
         cpi = <600>;
         //swap-xy;
         invert-x;       //COROPIT版ではコメントアウトを外す
-        //invert-y;       //COROPIT版ではコメントアウトを外す
+        //invert-y;     //この個体ではY軸は反転不要だったためコメントアウト
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
+#endif
     };
 };
 
