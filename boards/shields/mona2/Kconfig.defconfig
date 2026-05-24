@@ -19,7 +19,10 @@ config SPI
     default y
 
 config PMW3610
-    default y
+    default y if !TRACKBALL_PAW3222
+
+config PAW3222
+    default y if TRACKBALL_PAW3222
 
 endif
 
