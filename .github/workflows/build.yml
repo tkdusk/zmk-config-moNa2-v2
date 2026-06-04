@@ -39,7 +39,7 @@ jobs:
       - name: West Init
         run: |
           mkdir -p /tmp/zmk-build
-          ln -s ${GITHUB_WORKSPACE}/config /tmp/zmk-build/config
+          cp -r ${GITHUB_WORKSPACE}/config /tmp/zmk-build/config
           cd /tmp/zmk-build && west init -l config
 
       - name: West Update
@@ -57,7 +57,7 @@ jobs:
       - name: Inject secret macros
         env:
           ENTER_PASS_BINDINGS: ${{ secrets.ENTER_PASS_BINDINGS }}
-        run: python3 scripts/inject_secrets.py
+        run: cd /tmp/zmk-build && python3 ${GITHUB_WORKSPACE}/scripts/inject_secrets.py
 
       - name: West Build (${{ matrix.shield && format('{0} - ', matrix.shield) || '' }}${{ matrix.board }})
         shell: sh -x {0}
@@ -68,7 +68,7 @@ jobs:
             -b "${{ matrix.board }}" \
             ${{ matrix.snippet && format('-S "{0}"', matrix.snippet) || '' }} \
             -- \
-            -DZMK_CONFIG="${GITHUB_WORKSPACE}/config" \
+            -DZMK_CONFIG="/tmp/zmk-build/config" \
             ${{ matrix.shield && format('-DSHIELD="{0}"', matrix.shield) || '' }} \
             -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE}" \
             ${{ matrix.cmake-args || '' }}
