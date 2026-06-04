@@ -1,3 +1,28 @@
+# west workspace
+.west/
+zmk/
+zmk-pmw3610-driver/
+zmk-rgbled-widget/
+zmk-input-processor-keybind/
+zephyr/*
+!zephyr/module.yml
+
+# build output
 build/
 *.uf2
+*.bin
+
+# local build script artifacts
+build.sh
+.venv/
+
+# docs (design specs / plans)
+docs/
+
+# Claude Code context
+CLAUDE.md
+
+# macOS
+.DS_Store
 README.md
+WORKFLOW.md
