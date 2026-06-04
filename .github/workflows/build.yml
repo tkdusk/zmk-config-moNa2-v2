@@ -38,7 +38,7 @@ jobs:
 
       - name: Prepare environment
         run: |
-          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE};${GITHUB_WORKSPACE}/zmk-module-ble-management;${GITHUB_WORKSPACE}/zmk-module-settings-rpc;${GITHUB_WORKSPACE}/zmk-module-runtime-input-processor;${GITHUB_WORKSPACE}/zmk-behavior-runtime-sensor-rotate;${GITHUB_WORKSPACE}/zmk-pmw3610-driver;${GITHUB_WORKSPACE}/zmk-rgbled-widget;${GITHUB_WORKSPACE}/zmk-input-processor-keybind" >> $GITHUB_ENV
+          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
           echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
 
       - name: West Init
