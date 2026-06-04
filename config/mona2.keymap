@@ -58,6 +58,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        enter_pass: enter_pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>; // ENTER_PASS_PH
+            label = "ENTER_PASS";
+        };
     };
 
     behaviors {
@@ -103,7 +110,7 @@
 
         layer_1 {
             bindings = <
-&kp LG(W)  &kp LS(LG(T))   &msc SCRL_UP    &kp RIGHT_ALT    &none                  &kp N1    &kp N2   &kp N3    &kp NUMBER_4  &kp N5
+&kp LG(W)  &kp LS(LG(T))   &msc SCRL_UP    &kp RIGHT_ALT    &enter_pass                    &kp N1    &kp N2   &kp N3    &kp NUMBER_4  &kp N5
 &none      &mkp RCLK       &mkp MCLK       &mkp LCLK        &none                  &trans  &kp N6    &kp N7   &kp N8    &kp N9        &kp N0
 &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none        &trans    &trans  &kp SEMI  &kp SQT  &kp RBKT  &kp BSLH      &kp INT3
 &trans     &trans          &trans          &trans           &trans       &trans    &trans  &trans                                     &kp LBKT
@@ -114,7 +121,7 @@
 
         layer_2 {
             bindings = <
-&none   &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_PLUS                        &kp LG(W)  &kp LS(LG(T))   &none           &kp RIGHT_ALT    &none
+&none   &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_PLUS                        &kp LG(W)  &kp LS(LG(T))   &none           &kp RIGHT_ALT    &enter_pass
 &none   &kp KP_N4   &kp KP_N5  &kp KP_N6  &kp KP_MINUS               &trans  &kp PG_UP  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp HOME
 &none   &kp KP_N1   &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans    &trans  &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
 &trans  &kp KP_DOT  &kp KP_N0  &trans     &kp KP_SLASH     &trans    &trans  &trans                                                      &trans
