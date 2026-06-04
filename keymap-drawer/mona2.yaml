@@ -48,7 +48,7 @@ layers:
   - Sft+Gui+T
   - '&msc SCRL_UP'
   - RIGHT ALT
-  - ''
+  - '&enter_pass'
   - '1'
   - '2'
   - '3'
@@ -96,7 +96,7 @@ layers:
   - Sft+Gui+T
   - ''
   - RIGHT ALT
-  - ''
+  - '&enter_pass'
   - ''
   - KP 4
   - KP 5
