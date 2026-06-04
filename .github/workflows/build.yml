@@ -39,7 +39,8 @@ jobs:
       - name: West Init
         run: |
           mkdir -p /tmp/zmk-build
-          cd /tmp/zmk-build && west init -l ${GITHUB_WORKSPACE}/config
+          ln -s ${GITHUB_WORKSPACE}/config /tmp/zmk-build/config
+          cd /tmp/zmk-build && west init -l config
 
       - name: West Update
         run: cd /tmp/zmk-build && west update --fetch-opt=--filter=tree:0
