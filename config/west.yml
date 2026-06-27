@@ -12,8 +12,10 @@ manifest:
       url-base: https://github.com/sekigon-gonnoc
     - name: caksoylar  # <-- RGB LED
       url-base: https://github.com/caksoylar
-    - name: zettaface  # <-- Input Processor Keybind
+    - name: zettaface  # <-- Input Processor Keybind (original)
       url-base: https://github.com/zettaface
+    - name: tkdusk    # <-- Input Processor Keybind (fork: active-layers patch)
+      url-base: https://github.com/tkdusk
   projects:
     # ── ZMK 本体は cormoran さんの DYA Studio 対応 fork に切替 ──
     - name: zmk
@@ -48,7 +50,7 @@ manifest:
       remote: caksoylar
       revision: v0.3
     - name: zmk-input-processor-keybind
-      remote: zettaface
+      remote: tkdusk
       revision: main
   self:
     path: config
