@@ -9,6 +9,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 4
+#define GESTURE 5
 #define SCROLL 6
 
 &mt {
@@ -50,9 +51,10 @@
             key-positions = <19 20>;
         };
 
-        gesture_layer {
-            bindings = <&to 5>;
-            key-positions = <32 31>;
+        gesture_layer_toggle {
+            bindings = <&tog GESTURE>;
+            key-positions = <31 32>;
+            layers = <0>;
         };
     };
 
@@ -157,12 +159,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        Gesture {
+        gesture_layer {
             bindings = <
-&to_layer_0 Q           &to_layer_0 W             &to_layer_0 E             &to_layer_0 R         &to_layer_0 T                                              &to_layer_0 Y          &to_layer_0 U       &kp LC(UP_ARROW)    &to_layer_0 O        &to_layer_0 P
-&to_layer_0 A           &to_layer_0 S             &to_layer_0 D             &to_layer_0 F         &to_layer_0 G                           &to_layer_0 LBKT   &to_layer_0 H          &kp LC(LEFT_ARROW)  &to_layer_0 K       &kp LC(RIGHT_ARROW)  &to_layer_0 MINUS
-&to_layer_0 Z           &to_layer_0 X             &to_layer_0 C             &to_layer_0 V         &to_layer_0 B      &to_layer_0 LANG2    &to_layer_0 LANG1  &to_layer_0 N          &to_layer_0 M       &kp LC(DOWN_ARROW)  &to_layer_0 DOT      &to_layer_0 SLASH
-&to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 SPACE  &trans               &trans             &to_layer_0 BACKSPACE                                                               &to_layer_0 INT1
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

@@ -87,7 +87,7 @@
     x-codes = <INPUT_REL_X>;
     y-codes = <INPUT_REL_Y>;
     xy-to-scroll-enabled;
-    active-layers = <0x000000C0>;  /* layer6 + layer7 */
+    active-layers = <0x00000008>;  /* layer3 (scroll layer) */
     scale-multiplier = <1>;
     scale-divisor = <4>;            /* スクロール速度。大きいほど遅い。Studioで調整可 */
     /* 軸ロック(縦のみ等)が欲しければ AXIS_SNAP_MODE_Y を初期値に */
@@ -98,7 +98,38 @@
 
 /* マウス用は全レイヤーで有効 (active-layers = 0 がデフォルト) */
 &mouse_runtime_input_processor {
-    /* 例: マウス感度初期値を Studio から調整したいだけならここで触らなくてOK */
+    temp-layer-enabled;
+    temp-layer = <4>;
+    temp-layer-deactivation-delay-ms = <500>;
+};
+
+/* ── studio-rpc-usb-uart snippet 相当（-S フラグ代替） ── */
+/ {
+    chosen {
+        zmk,studio-rpc-uart = &snippet_studio_rpc_usb_uart;
+    };
+
+    gesture_keybind: gesture_keybind {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        bindings = <&kp LC(RIGHT)>,
+                   <&kp LC(LEFT)>,
+                   <&kp LC(DOWN)>,
+                   <&kp LC(UP)>;
+        mode = <1>;
+        tick = <40>;
+        tap-ms = <10>;
+        wait-ms = <0>;
+        threshold = <1>;
+        track_remainders;
+        active-layers = <0x00000020>; /* bit5 = layer 5 (gesture layer) */
+    };
+};
+
+&zephyr_udc0 {
+    snippet_studio_rpc_usb_uart: snippet_studio_rpc_usb_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
 };
 
 /* ─────────────────────────────────────────────────────────────
@@ -112,5 +143,5 @@
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
-    input-processors = <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
+    input-processors = <&gesture_keybind &mouse_runtime_input_processor &scroll_runtime_input_processor>;
 };
