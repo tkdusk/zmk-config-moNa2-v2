@@ -38,23 +38,26 @@ jobs:
 
       - name: Prepare environment
         run: |
-          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE};${GITHUB_WORKSPACE}/zmk-pmw3610-driver;${GITHUB_WORKSPACE}/zmk-rgbled-widget;${GITHUB_WORKSPACE}/zmk-input-processor-keybind" >> $GITHUB_ENV
-          echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
+          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE};/tmp/zmk-build/zmk-pmw3610-driver;/tmp/zmk-build/zmk-rgbled-widget;/tmp/zmk-build/zmk-input-processor-keybind" >> $GITHUB_ENV
 
       - name: West Init
-        run: west init -l config
+        run: |
+          mkdir -p /tmp/zmk-build
+          cd /tmp/zmk-build
+          west init -l ${GITHUB_WORKSPACE}/config
 
       - name: West Update
-        run: west update --fetch-opt=--filter=tree:0
+        run: cd /tmp/zmk-build && west update --fetch-opt=--filter=tree:0
 
       - name: Check ZMK revision
         run: |
+          cd /tmp/zmk-build
           zmk_revision=$(west list -f "{revision}" zmk)
           echo "zmk_revision=${zmk_revision}" >> $GITHUB_ENV
           echo "ZMK revision: ${zmk_revision}"
 
       - name: West Zephyr export
-        run: west zephyr-export
+        run: cd /tmp/zmk-build && west zephyr-export
 
       - name: Inject secret macros
         env:
@@ -64,6 +67,7 @@ jobs:
       - name: West Build (${{ matrix.shield && format('{0} - ', matrix.shield) || '' }}${{ matrix.board }})
         shell: sh -x {0}
         run: |
+          cd /tmp/zmk-build
           west build \
             -s zmk/app \
             -d build \
@@ -84,8 +88,8 @@ jobs:
       - name: ${{ matrix.board }} Kconfig file
         if: ${{ !cancelled() }}
         run: |
-          if [ -f "build/zephyr/.config" ]; then
-            grep -v -e "^#" -e "^$" "build/zephyr/.config" | sort
+          if [ -f "/tmp/zmk-build/build/zephyr/.config" ]; then
+            grep -v -e "^#" -e "^$" "/tmp/zmk-build/build/zephyr/.config" | sort
           else
             echo "No Kconfig output"
           fi
@@ -93,10 +97,10 @@ jobs:
       - name: ${{ matrix.board }} Devicetree file
         if: ${{ !cancelled() }}
         run: |
-          if [ -f "build/zephyr/zephyr.dts" ]; then
-            cat "build/zephyr/zephyr.dts"
-          elif [ -f "build/zephyr/zephyr.dts.pre" ]; then
-            cat -s "build/zephyr/zephyr.dts.pre"
+          if [ -f "/tmp/zmk-build/build/zephyr/zephyr.dts" ]; then
+            cat "/tmp/zmk-build/build/zephyr/zephyr.dts"
+          elif [ -f "/tmp/zmk-build/build/zephyr/zephyr.dts.pre" ]; then
+            cat -s "/tmp/zmk-build/build/zephyr/zephyr.dts.pre"
           else
             echo "No Devicetree output"
           fi
@@ -104,22 +108,22 @@ jobs:
       - name: Rename artifacts
         shell: sh -x {0}
         run: |
-          mkdir build/artifacts
-          if [ -f "build/zephyr/zmk.uf2" ]; then
+          mkdir /tmp/zmk-build/build/artifacts
+          if [ -f "/tmp/zmk-build/build/zephyr/zmk.uf2" ]; then
             artifact_name="${{ matrix.artifact-name || format('{0}{1}', matrix.shield && format('{0}-', matrix.shield) || '', matrix.board) }}"
             artifact_name=$(echo "${artifact_name}" | tr '/' '-' | tr ' ' '_')
-            cp "build/zephyr/zmk.uf2" "build/artifacts/${artifact_name}.uf2"
-          elif [ -f "build/zephyr/zmk.bin" ]; then
+            cp "/tmp/zmk-build/build/zephyr/zmk.uf2" "/tmp/zmk-build/build/artifacts/${artifact_name}.uf2"
+          elif [ -f "/tmp/zmk-build/build/zephyr/zmk.bin" ]; then
             artifact_name="${{ matrix.artifact-name || format('{0}{1}', matrix.shield && format('{0}-', matrix.shield) || '', matrix.board) }}"
             artifact_name=$(echo "${artifact_name}" | tr '/' '-' | tr ' ' '_')
-            cp "build/zephyr/zmk.bin" "build/artifacts/${artifact_name}.bin"
+            cp "/tmp/zmk-build/build/zephyr/zmk.bin" "/tmp/zmk-build/build/artifacts/${artifact_name}.bin"
           fi
 
       - name: Archive (${{ matrix.shield && format('{0} - ', matrix.shield) || '' }}${{ matrix.board }})
         uses: actions/upload-artifact@v4
         with:
           name: artifact-${{ matrix.artifact-name || format('{0}{1}', matrix.shield && format('{0}-', matrix.shield) || '', matrix.board) }}
-          path: build/artifacts
+          path: /tmp/zmk-build/build/artifacts
 
   merge:
     runs-on: ubuntu-latest
