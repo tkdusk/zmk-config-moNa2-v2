@@ -118,6 +118,8 @@
                    <&kp LC(DOWN)>;
         mode = <1>;
         tick = <10>;
+        x-tick = <25>;
+        y-tick = <6>;
         tap-ms = <10>;
         wait-ms = <0>;
         threshold = <1>;
