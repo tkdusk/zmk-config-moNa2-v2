@@ -38,26 +38,31 @@ jobs:
 
       - name: Prepare environment
         run: |
-          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE};/tmp/zmk-build/zmk-pmw3610-driver;/tmp/zmk-build/zmk-rgbled-widget;/tmp/zmk-build/zmk-input-processor-keybind" >> $GITHUB_ENV
+          ZMK_WS=/tmp/zmk-build
+          echo "ZMK_WS=${ZMK_WS}" >> $GITHUB_ENV
+          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE};${ZMK_WS}/zmk-pmw3610-driver;${ZMK_WS}/zmk-rgbled-widget;${ZMK_WS}/zmk-input-processor-keybind" >> $GITHUB_ENV
 
       - name: West Init
         run: |
-          mkdir -p /tmp/zmk-build
-          cd /tmp/zmk-build
-          west init -l ${GITHUB_WORKSPACE}/config
+          mkdir -p ${ZMK_WS}/config
+          cp ${GITHUB_WORKSPACE}/config/west.yml ${ZMK_WS}/config/west.yml
+          cd ${ZMK_WS}
+          west init -l config
 
       - name: West Update
-        run: cd /tmp/zmk-build && west update --fetch-opt=--filter=tree:0
+        working-directory: /tmp/zmk-build
+        run: west update --fetch-opt=--filter=tree:0
 
       - name: Check ZMK revision
+        working-directory: /tmp/zmk-build
         run: |
-          cd /tmp/zmk-build
           zmk_revision=$(west list -f "{revision}" zmk)
           echo "zmk_revision=${zmk_revision}" >> $GITHUB_ENV
           echo "ZMK revision: ${zmk_revision}"
 
       - name: West Zephyr export
-        run: cd /tmp/zmk-build && west zephyr-export
+        working-directory: /tmp/zmk-build
+        run: west zephyr-export
 
       - name: Inject secret macros
         env:
@@ -65,9 +70,9 @@ jobs:
         run: python3 scripts/inject_secrets.py
 
       - name: West Build (${{ matrix.shield && format('{0} - ', matrix.shield) || '' }}${{ matrix.board }})
+        working-directory: /tmp/zmk-build
         shell: sh -x {0}
         run: |
-          cd /tmp/zmk-build
           west build \
             -s zmk/app \
             -d build \
