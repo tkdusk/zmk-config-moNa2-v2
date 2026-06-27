@@ -124,7 +124,6 @@
         wait-ms = <0>;
         threshold = <1>;
         track_remainders;
-        lock-axis;
         max_threshold = <2000>;
         active-layers = <0x00000020>; /* bit5 = layer 5 (gesture layer) */
     };
