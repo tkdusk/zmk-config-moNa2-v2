@@ -54,7 +54,6 @@
         gesture_layer {
             bindings = <&mo GESTURE>;
             key-positions = <31 32>;
-            layers = <0>;
         };
     };
 
