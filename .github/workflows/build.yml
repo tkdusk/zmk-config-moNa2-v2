@@ -44,8 +44,8 @@ jobs:
 
       - name: West Init
         run: |
-          mkdir -p ${ZMK_WS}/config
-          cp ${GITHUB_WORKSPACE}/config/west.yml ${ZMK_WS}/config/west.yml
+          mkdir -p ${ZMK_WS}
+          cp -r ${GITHUB_WORKSPACE}/config ${ZMK_WS}/config
           cd ${ZMK_WS}
           west init -l config
 
