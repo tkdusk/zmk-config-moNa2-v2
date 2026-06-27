@@ -54,7 +54,6 @@
         gesture_layer {
             bindings = <&mo GESTURE>;
             key-positions = <31 32>;
-            layers = <0>;
         };
     };
 
@@ -151,7 +150,7 @@
         MOUSE {
             bindings = <
 &to_layer_0 Q           &to_layer_0 W             &msc SCRL_UP              &to_layer_0 R         &to_layer_0 T                                              &to_layer_0 Y          &to_layer_0 U  &to_layer_0 I   &msc SCRL_UP    &to_layer_0 P
-&to_layer_0 A           &mkp RCLK                 &mkp MCLK                 &mkp LCLK             &to_layer_0 G                           &to_layer_0 LBKT   &to_layer_0 H          &to_layer_0 J  &mkp LCLK       &mkp MCLK       &mkp RCLK
+&to_layer_0 A           &mkp RCLK                 &mkp MCLK                 &mkp LCLK             &to_layer_0 G                           &to_layer_0 LBKT   &to_layer_0 H          &to_layer_0 J  &to_layer_0 K   &mkp LCLK       &mkp RCLK
 &to_layer_0 Z           &msc SCRL_LEFT            &msc SCRL_DOWN            &msc SCRL_RIGHT       &to_layer_0 B      &to_layer_0 LANG2    &to_layer_0 LANG1  &to_layer_0 N          &to_layer_0 M  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
 &to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_COMMAND  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 SPACE  &trans               &trans             &to_layer_0 BACKSPACE                                                 &to_layer_0 INT1
             >;

@@ -191,8 +191,8 @@ layers:
   - '&to_layer_0 LBKT'
   - '&to_layer_0 H'
   - '&to_layer_0 J'
+  - '&to_layer_0 K'
   - '&mkp LCLK'
-  - '&mkp MCLK'
   - '&mkp RCLK'
   - '&to_layer_0 Z'
   - '&msc SCRL_LEFT'
@@ -271,4 +271,3 @@ combos:
   k: '3'
 - p: [31, 32]
   k: Gesture
-  l: [default]
