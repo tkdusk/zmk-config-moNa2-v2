@@ -247,8 +247,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -270,5 +270,5 @@ combos:
 - p: [19, 20]
   k: '3'
 - p: [31, 32]
-  k: {t: Gesture, h: toggle}
+  k: Gesture
   l: [default]
