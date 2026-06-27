@@ -52,7 +52,7 @@
         };
 
         gesture_layer {
-            bindings = <&tog GESTURE>;
+            bindings = <&mo GESTURE>;
             key-positions = <31 32>;
             layers = <0>;
         };
