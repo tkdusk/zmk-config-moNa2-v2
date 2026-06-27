@@ -117,7 +117,7 @@
                    <&kp LC(UP)>,
                    <&kp LC(DOWN)>;
         mode = <1>;
-        tick = <40>;
+        tick = <20>;
         tap-ms = <10>;
         wait-ms = <0>;
         threshold = <1>;
