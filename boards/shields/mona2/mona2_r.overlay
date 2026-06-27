@@ -112,5 +112,23 @@
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
-    input-processors = <&mouse_runtime_input_processor &scroll_runtime_input_processor>;
+    input-processors = <&gesture_keybind &mouse_runtime_input_processor &scroll_runtime_input_processor>;
+};
+
+/ {
+    gesture_keybind: gesture_keybind {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        bindings = <&kp LC(RIGHT)>,
+                   <&kp LC(LEFT)>,
+                   <&kp LC(DOWN)>,
+                   <&kp LC(UP)>;
+        mode = <1>;
+        tick = <40>;
+        tap-ms = <10>;
+        wait-ms = <0>;
+        threshold = <1>;
+        track_remainders;
+        active-layers = <0x00000020>;
+    };
 };
