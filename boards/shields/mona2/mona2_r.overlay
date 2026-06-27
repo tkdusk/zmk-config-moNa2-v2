@@ -114,8 +114,8 @@
         #input-processor-cells = <0>;
         bindings = <&kp LC(RIGHT)>,
                    <&kp LC(LEFT)>,
-                   <&kp LC(DOWN)>,
-                   <&kp LC(UP)>;
+                   <&kp LC(UP)>,
+                   <&kp LC(DOWN)>;
         mode = <1>;
         tick = <40>;
         tap-ms = <10>;
