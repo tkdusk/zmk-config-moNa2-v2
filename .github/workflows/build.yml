@@ -40,7 +40,7 @@ jobs:
         run: |
           ZMK_WS=/tmp/zmk-build
           echo "ZMK_WS=${ZMK_WS}" >> $GITHUB_ENV
-          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE};${ZMK_WS}/zmk-pmw3610-driver;${ZMK_WS}/zmk-rgbled-widget;${ZMK_WS}/zmk-input-processor-keybind" >> $GITHUB_ENV
+          echo "ZMK_EXTRA_MODULES=${GITHUB_WORKSPACE};${GITHUB_WORKSPACE}/zmk-input-processor-gestures;${ZMK_WS}/zmk-pmw3610-driver;${ZMK_WS}/zmk-rgbled-widget" >> $GITHUB_ENV
 
       - name: West Init
         run: |
