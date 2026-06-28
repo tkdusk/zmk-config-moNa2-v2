@@ -10,7 +10,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 4
 #define GESTURE 5
-#define SCROLL 6
 
 &mt {
     flavor = "tap-preferred";
