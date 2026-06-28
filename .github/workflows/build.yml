@@ -70,7 +70,7 @@ jobs:
             -- \
             -DZMK_CONFIG="/tmp/zmk-build/config" \
             ${{ matrix.shield && format('-DSHIELD="{0}"', matrix.shield) || '' }} \
-            -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE}" \
+            -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE};${GITHUB_WORKSPACE}/zmk-input-processor-gestures" \
             ${{ matrix.cmake-args || '' }}
 
       - name: Warn about building from main if build fails

@@ -1,0 +1,31 @@
+# WARNING. THIS FILE IS AUTO-GENERATED. DO NOT MODIFY!
+#
+# This file contains build system settings derived from your modules.
+#
+# Modules may be set via ZEPHYR_MODULES, ZEPHYR_EXTRA_MODULES,
+# and/or the west manifest file.
+#
+# See the Modules guide for more information.
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-workspace-dya/modules/hal/atmel"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-workspace-dya/modules/hal/espressif"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-workspace-dya/modules/hal/gigadevice"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-workspace-dya/modules/hal/nuvoton"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-workspace-dya/modules/hal/stm32"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-modules-mona2/zmk-pmw3610-driver"
+"BOARD_ROOT":"/Users/tkd_usk/src/zmk-modules-mona2/zmk-rgbled-widget"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-modules-mona2/zmk-rgbled-widget"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-modules-mona2/zmk-input-processor-keybind"
+"BOARD_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-ble-management"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-ble-management"
+"SNIPPET_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-ble-management"
+"BOARD_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-settings-rpc"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-settings-rpc"
+"SNIPPET_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-settings-rpc"
+"BOARD_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-runtime-input-processor"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-runtime-input-processor"
+"SNIPPET_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-module-runtime-input-processor"
+"BOARD_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-behavior-runtime-sensor-rotate"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-behavior-runtime-sensor-rotate"
+"SNIPPET_ROOT":"/Users/tkd_usk/src/zmk-modules-dya/zmk-behavior-runtime-sensor-rotate"
+"DTS_ROOT":"/Users/tkd_usk/src/zmk-workspace-dya/zmk/app/module"
+"MODULE_EXT_ROOT":"/Users/tkd_usk/src/zmk-workspace-dya/zmk/app/keymap-module"

@@ -1,0 +1,3638 @@
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/zephyr_package_search.cmake:72 (find_package)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfigVersion.cmake:78 (check_zephyr_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Zephyr"
+    configs:
+      -
+        filename: "ZephyrConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyr-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "0.0.0"
+      version_complete: "0.0.0"
+      exact: true
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Zephyr"
+      search_paths:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyrunittest-package/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyrunittest-package/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyr-package/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyr-package/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyrunittest-package/cmake/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyrunittest-package/cmake/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "insufficient_version"
+        message: "The version found is not compatible with the version requested."
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/share/zephyr-package/cmake/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:28 (find_package)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "ZephyrBuildConfiguration"
+    configs:
+      -
+        filename: "ZephyrBuildConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyrbuild-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: false
+      bypass_provider: false
+      names:
+        - "ZephyrBuild"
+      search_paths:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/../*"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: false
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: false
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.venv/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.venv/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.west/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.west/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/modules/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/modules/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zmk/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zmk/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:41 (find_package)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "ZephyrAppConfiguration"
+    configs:
+      -
+        filename: "ZephyrAppConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyrapp-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: false
+      bypass_provider: false
+      names:
+        - "ZephyrApp"
+      search_paths:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/zmk/app"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: false
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: false
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/ZephyrAppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/zephyrapp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zmk/app/ZephyrAppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/zmk/app/zephyrapp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/ccache.cmake:10 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CCACHE_FOUND"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ccache"
+    candidate_directories:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/ccache"
+      - "/opt/homebrew/bin/ccache"
+      - "/opt/homebrew/sbin/ccache"
+      - "/usr/local/bin/ccache"
+      - "/usr/bin/ccache"
+      - "/bin/ccache"
+      - "/usr/sbin/ccache"
+      - "/sbin/ccache"
+      - "/Library/Apple/usr/bin/ccache"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/ccache"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/ccache"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "keymap-module/modules/modules.cmake:95 (find_path)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_module.cmake:130 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "path"
+    variable: "BOARD_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "seeeduino_xiao_ble_defconfig"
+    candidate_directories:
+      - "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/boards/shields/mona2/"
+    searched_directories:
+      - "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/boards/shields/mona2/seeeduino_xiao_ble_defconfig"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/boards.cmake:117 (find_path)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "path"
+    variable: "BOARD_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "seeeduino_xiao_ble_defconfig"
+    candidate_directories:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/native_sim/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/native_posix/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/nrf_bsim/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/common/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/doc/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_ethernet_kit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_devkitc_wrover/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/m5stack_core2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp_wrover_kit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/nxp_adsp_imx8/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/qemu_xtensa/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/xt-sim/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/intel_adsp_ace15_mtpm/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/olimex_esp32_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/nxp_adsp_imx8m/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s3_luatos_core/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/intel_adsp_ace20_lnl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/nxp_adsp_imx8x/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/odroid_go/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s2_franzininho/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/intel_adsp_cavs25/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s2_saola/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_net/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s3_devkitm/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/m5stickc_plus/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_devkitc_wroom/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/heltec_wifi_lora32_v2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/yd_esp32/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/xiao_esp32s3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/st7789v_generic/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/st_b_lcd40_dsi1_mb1166/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mcp2515/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/buydisplay_2_8_tft_touch_arduino/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/amg88xx/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/npm1300_ek/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/frdm_kw41z/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/rk055hdmipi4m/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/rk055hdmipi4ma0/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks01a1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_data_logger/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_mcp2518fd_click/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/atmel_rf2xx/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/g1120b0mipi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/semtech_sx1272mb2das/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_adc_click/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/arduino_uno_click/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks02a1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/waveshare_epaper/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ls0xx_generic/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_eth_click/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_winc1500/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/arceli_eth_w5500/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/lmp90100_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/max3421e/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_53l0a1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_pca9685/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/frdm_stbc_agm01/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/wnc_m14a2a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_eeprma2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/npm6001_ek/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/dac80508_evm/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_wifi_bt_click/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks01a2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/frdm_cr20a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks01a3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ftdi_vm800c/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_2_8_tft_touch_v2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/sparkfun_sara_r4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ti_bp_bassensorsmkii/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ssd1306/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/esp_8266/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/st7735r/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/semtech_sx1262mb2das/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/buydisplay_3_5_tft_touch_arduino/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/link_board_eth/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/inventek_eswifi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/semtech_sx1276mb1mas/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/boostxl_ulpsense/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/v2c_daplink/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/npm1100_ek/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/tcan4550evm/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_idb05a1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/max7219/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/mips/qemu_malta/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/common/actinius/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_ish/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/qemu_x86/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/up_squared/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_ehl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/common/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_adl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/acrn/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_rpl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimex_stm32_p405/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l4r5zi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/reel_board/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f031k6/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/raytac_mdbt50q_db_40_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f030r8/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_bmd300eval_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1020_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/seeeduino_xiao_ble/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efr32_thunderboard/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ruuvi_ruuvitag/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_qt_py_rp2040/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/frdm_k22f/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f334r8/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/qemu_cortex_m3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_neonkey/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/npcx7m6fb_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32l496g_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sam_e70_xplained/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/decawave_dwm1001_dev/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32e507v_start/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/we_ophelia1ev_nrf52805/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimex_stm32_h405/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/legend/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso51u68/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimx8mp_phyboard_pollux/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/frdm_k82f/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/holyiot_yj16019/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mm_feather/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l011k4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f103_mini/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf9160dk_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_aerocore2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/b_g474e_dpow1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/wio_terminal/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso55s36/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/da1469x_dk_pro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/vmu_rt1170/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cc26x2r1_launchxl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f7508_dk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf51_ble400/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_bmd345eval_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mg100/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/atsamr21_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mps3_an547/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pico_pi_m4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f091rc/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/atsamd20_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf51dongle_nrf51422/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bbc_microbit_v2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pinetime_devkit0/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/blueclover_plt_demo_v2_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cc3220sf_launchxl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l073rz/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/twr_ke18f/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f746g_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/actinius_icarus_som_dk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f030_demo/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso55s06/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/qemu_cortex_a9/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/hexiwear_kw40z/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sparkfun_thing_plus_nrf9160/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f072_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_evkninab3_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cc1352p1_launchxl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/warp7_m4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mec172xevb_assy6906/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_kb2040/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/frdm_kl25z/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimx8mm_phyboard_polis/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f103rb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_nano_33_iot/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf9161dk_nrf9161/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimex_stm32_e407/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/rcar_h3ulcb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52840_mdk_usb_dongle/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bt610/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/atsamd21_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52840dongle_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sam_v71_xult/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32h573i_dk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/frdm_kw41z/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32e103v_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52_sparkfun/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efr32_radio/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/particle_argon/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_trinket_m0/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f072b_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f446ze/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_carbon_nrf51/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32a503v_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cyclonev_socdk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso11u68/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f769i_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lora_e5_dev_board/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52833dk_nrf52833/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/raytac_mdbt50q_db_33_nrf52833/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/raytac_mdbt53v_db_40_nrf5340/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f401_mini/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/rak5010_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ip_k66f/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l4a6zg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_g031k8/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1024_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/v2m_beetle/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f303re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_zero/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimexino_stm32/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f412g_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f429i_disc1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf5340dk_nrf5340/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mikroe_mini_m4_for_stm32/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/google_dragonclaw/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/atsaml21_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/rddrone_fmuk66/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l031k6/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_g431rb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f413zh/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_due/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efm32gg_slwstk6121a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_itsybitsy_m4_express/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_bmd330eval_nrf52810/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sam4l_ek/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sensortile_box/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32mp157c_dk2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pan1770_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/tdk_robokit1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/qemu_cortex_r5/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_c031c6/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52833dk_nrf52820/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/xiao_ble/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bl654_usb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/apollo4p_blue_kxr_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/twr_kv58f220m/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso54114/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/scobc_module1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32_min_dev/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/usb_kw24d512/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1040_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52840dk_nrf52811/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bcm958401m2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l496zg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_bmd380eval_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f207zg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_meerkat96/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f723e_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bt510/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/raytac_mdbt53_db_40_nrf5340/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/rpi_pico/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l552ze_q/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/atsame54_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_argonkey/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/seeeduino_xiao_rp2040/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pandora_stm32l475/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf9160_innblue22/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52840_blip/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1050_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_evkninab1_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_feather_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_g071rb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_h7a3zi_q/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_feather_m0_lora/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_carbon/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32373c_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52840_papyr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f410rb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52_blenano2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/particle_boron/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1062_fmurt6/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_nano_33_ble/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/fvp_baser_aemv8r_aarch32/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf5340_audio_dk_nrf5340/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52_adafruit_feather/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_h563zi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/contextualelectronics_abc/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32f403z_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/quick_feather/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimx8mq_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/zybo/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_nitrogen/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf9160dk_nrf9160/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mec1501modular_assy6885/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f303k8/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_h723zg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f302r8/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l433rc_p/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimx8mp_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/dragino_lsn50/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/xmc45_relax_kit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mec172xmodular_assy6930/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l412rb_p/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/01space_rp2040_042lcd/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_feather_stm32f405/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/frdm_k64f/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bl653_dvk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/colibri_imx7d_m4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l152re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_u575zi_q/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sam4s_xplained/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32l476g_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/qemu_cortex_m0/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efm32gg_sltb009a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f469i_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efr32mg_sltb004a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32g0316_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/blackpill_f401cc/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf51_vbluno51/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mercury_xu/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/actinius_icarus_som/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/msp_exp432p401r_launchxl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/dragino_nbsn95/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f411e_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bbc_microbit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_g474re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f756zg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nuvoton_pfm_m487/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bl652_dvk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_h753zi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimex_stm32_h407/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arty/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mikroe_clicker_2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ebyte_e73_tbb_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f412zg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f070rb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/numaker_pfm_m467/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/az3166_iotdevkit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/acn52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32f450i_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_h745zi_q/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_itsybitsy_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cc3235sf_launchxl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f401re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1060_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cy8ckit_062_wifi_bt/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt595_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso55s69/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/blackpill_f401ce/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/v2m_musca_b1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf21540dk_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l432kc/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/npcx9m6f_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pan1781_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/qomu/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cy8cproto_063_ble/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32f470i_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1064_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f411re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_portenta_h7/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_wb55rg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/serpente/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mec15xxevb_assy6853/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cc1352r1_launchxl/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimx8mm_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/blackpill_f411ce/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/thingy52_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf51_blenano/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pan1780_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_evkninab4_nrf52833/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bl5340_dvk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f767zi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/adafruit_feather_m0_basic_proto/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_g070rb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52dk_nrf52805/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bl654_dvk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/steval_fcu001v1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efm32hg_slstk3400a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ev11l78a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52_vbluno52/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efm32gg_stk3701a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f3_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l452re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pan1782_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_g0b1re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/we_proteus3ev_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/v2m_musca_s1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_avenger96/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52840_mdk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efm32wg_stk3800/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f429zi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_giga_r1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f042k6/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/apollo4p_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/disco_l475_iot1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f3_seco_d23/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/black_f407zg_pro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/am62x_m4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/rcar_h3_salvatorx/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_bmd360eval_nrf52811/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/rm1xx_dvk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_mkrzero/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32h747i_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efr32xg24_dk2601b/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f746zg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_wba52cg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52dk_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_h743zi/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mm_swiftio/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/black_f407ve/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52dk_nrf52810/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efm32pg_stk3402a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimex_stm32_h103/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f4_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mps2_an521/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/circuitdojo_feather_nrf9160/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/pinnacle_100_dvk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52840dk_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32f407v_start/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32g071b_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1015_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf52832_mdk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/boardsource_blok/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/teensy4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cc1352r_sensortag/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32e507z_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_stm32_sensor_mez/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bcm958402m2_m7/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l053r8/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1160_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/waveshare_open103z/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32f450z_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/b_l072z_lrwan1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sam4e_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/beagle_bcf/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/actinius_icarus/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32vl_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cy8ckit_062_ble/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/efm32pg_stk3401a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/google_twinkie_v2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf51dk_nrf51422/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/sparkfun_pro_micro_rp2040/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mps2_an385/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ronoth_lodev/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimex_lora_stm32wl_devkit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm3210c_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/swan_r5/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32f350r_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/rak4631_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/segger_trb_stm32f407/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f446re/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/npcx4m8f_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l476rg/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cy8cproto_062_4343w/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/atsamr34_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/particle_xenon/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_u5a5zj_q/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32l233r_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mr_canhubk3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/udoo_neo_full_m4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/we_proteus2ev_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32h7b3i_dk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/arduino_nicla_sense_me/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/b_u585i_iot02a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso55s16/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nrf9160_innblue21/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/hexiwear_k64/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt685_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/google_kukui/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32l562e_dk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1170_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/thingy53_nrf5340/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32l1_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/96b_wistrio/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/bl654_sensor_board/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/actinius_icarus_bee/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/atsamc21n_xpro/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/xmc47_relax_kit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/kv260_r5/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_evkannab1_nrf52832/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32h735g_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_bmd340eval_nrf52840/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1010_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ast1030_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32f0_disco/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/b_l4s5i_iot01a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/degu_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/seeeduino_xiao/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_wl55jc/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/lpcxpresso55s28/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/cy8ckit_062s4/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/s32z270dc2_r52/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/faze/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/stm32g081b_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/gd32f450v_start/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arc/hsdk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arc/qemu_arc/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arc/hsdk4xd/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arc/nsim/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arc/emsdp/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arc/iotdk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arc/em_starterkit/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/gd32vf103v_eval/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/gd32vf103c_starter/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/esp32c3_luatos_core/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/qemu_riscv64/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/esp32c3_devkitm/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/opentitan_earlgrey/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/titanium_ti60_f225/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/xiao_esp32c3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/sparkfun_red_v_things_plus/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/niosv_m/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/hifive1/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/hifive1_revb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/icev_wireless/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/mpfs_icicle/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/m2gl025_miv/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/adp_xc7k_ae350/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/qemu_riscv32/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/it8xxx2_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/hifive_unmatched/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/tlsr9518adk80d/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/longan_nano/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/it82xx2_evb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/rv32m1_vega/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/neorv32/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/niosv_g/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/hifive_unleashed/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/qemu_riscv32e/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/stamp_c3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/riscv/litex_vexriscv/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/sparc/gr716a_mini/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/sparc/generic_leon3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/sparc/qemu_leon3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/intel_socfpga_agilex5_socdk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/rpi_4b/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/khadas_edgev/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/qemu_kvm_arm64/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/xenvm/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/intel_socfpga_agilex_socdk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/mimx8mp_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/fvp_base_revc_2xaemv8a/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/bcm958402m2_a72/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/nxp_ls1046ardb/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/mimx93_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/rcar_salvator_xs_m3/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/mimx8mm_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/phycore_am62x_a53/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/qemu_cortex_a53/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/mimx8mn_evk/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/fvp_baser_aemv8r/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm64/rcar_h3ulcb_ca57/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/nios2/qemu_nios2/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/nios2/altera_max10/"
+    searched_directories:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/native_sim/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/native_posix/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/nrf_bsim/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/common/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/posix/doc/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_ethernet_kit/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_devkitc_wrover/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/m5stack_core2/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp_wrover_kit/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/nxp_adsp_imx8/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/qemu_xtensa/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/xt-sim/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/intel_adsp_ace15_mtpm/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/olimex_esp32_evb/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/nxp_adsp_imx8m/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s3_luatos_core/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/intel_adsp_ace20_lnl/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/nxp_adsp_imx8x/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/odroid_go/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s2_franzininho/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/intel_adsp_cavs25/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s2_saola/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_net/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32s3_devkitm/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/m5stickc_plus/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/esp32_devkitc_wroom/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/heltec_wifi_lora32_v2/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/yd_esp32/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/xtensa/xiao_esp32s3/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/st7789v_generic/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/st_b_lcd40_dsi1_mb1166/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mcp2515/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/buydisplay_2_8_tft_touch_arduino/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/amg88xx/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/npm1300_ek/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/frdm_kw41z/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/rk055hdmipi4m/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/rk055hdmipi4ma0/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks01a1/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_data_logger/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_mcp2518fd_click/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/atmel_rf2xx/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/g1120b0mipi/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/semtech_sx1272mb2das/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_adc_click/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/arduino_uno_click/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks02a1/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/waveshare_epaper/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ls0xx_generic/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_eth_click/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_winc1500/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/arceli_eth_w5500/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/lmp90100_evb/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/max3421e/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_53l0a1/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_pca9685/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/frdm_stbc_agm01/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/wnc_m14a2a/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_eeprma2/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/npm6001_ek/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/dac80508_evm/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/mikroe_wifi_bt_click/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks01a2/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/frdm_cr20a/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_iks01a3/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ftdi_vm800c/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/adafruit_2_8_tft_touch_v2/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/sparkfun_sara_r4/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ti_bp_bassensorsmkii/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/ssd1306/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/esp_8266/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/st7735r/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/semtech_sx1262mb2das/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/buydisplay_3_5_tft_touch_arduino/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/link_board_eth/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/inventek_eswifi/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/semtech_sx1276mb1mas/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/boostxl_ulpsense/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/v2c_daplink/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/npm1100_ek/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/tcan4550evm/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/x_nucleo_idb05a1/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/shields/max7219/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/mips/qemu_malta/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/common/actinius/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_ish/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/qemu_x86/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/up_squared/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_ehl/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/common/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_adl/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/acrn/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/x86/intel_rpl/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/olimex_stm32_p405/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_l4r5zi/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/reel_board/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f031k6/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/raytac_mdbt50q_db_40_nrf52840/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/nucleo_f030r8/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/ubx_bmd300eval_nrf52832/seeeduino_xiao_ble_defconfig"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/mimxrt1020_evk/seeeduino_xiao_ble_defconfig"
+    found: "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/boards/arm/seeeduino_xiao_ble/"
+    search_context:
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindZephyr-sdk.cmake:77 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindHostTools.cmake:53 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Zephyr-sdk"
+    configs:
+      -
+        filename: "Zephyr-sdkConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyr-sdk-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "0.0.0"
+      version_complete: "0.0.0"
+      exact: true
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Zephyr-sdk"
+      search_paths:
+        - "/usr"
+        - "/usr/local"
+        - "/opt"
+        - "/Users/tkd_usk"
+        - "/Users/tkd_usk/.local"
+        - "/Users/tkd_usk/.local/opt"
+        - "/Users/tkd_usk/bin"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.venv/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.venv/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/zephyr-sdk-0.16.4/cmake/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "insufficient_version"
+        message: "The version found is not compatible with the version requested."
+      -
+        path: "/Users/tkd_usk/zephyr-sdk-0.16.4/cmake/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/zephyr-sdk-0.16.4/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/zephyr-sdk-0.16.4/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/zephyr-sdk-0.16.4/cmake/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "insufficient_version"
+        message: "The version found is not compatible with the version requested."
+      -
+        path: "/Users/tkd_usk/zephyr-sdk-0.16.4/cmake/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.local/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.local/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindHostTools.cmake:56 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "GPERF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gperf"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/gperf"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/gperf"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/gperf"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/gperf"
+      - "/opt/homebrew/bin/gperf"
+      - "/opt/homebrew/sbin/gperf"
+      - "/usr/local/bin/gperf"
+    found: "/usr/bin/gperf"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindHostTools.cmake:59 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "OPENOCD"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "openocd"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/openocd"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/openocd"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/openocd"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/openocd"
+      - "/opt/homebrew/bin/openocd"
+      - "/opt/homebrew/sbin/openocd"
+      - "/usr/local/bin/openocd"
+      - "/usr/bin/openocd"
+      - "/bin/openocd"
+      - "/usr/sbin/openocd"
+      - "/sbin/openocd"
+      - "/Library/Apple/usr/bin/openocd"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/openocd"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/openocd"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindHostTools.cmake:62 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "BOSSAC"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "bossac"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/bossac"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/bossac"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bossac"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/bossac"
+      - "/opt/homebrew/bin/bossac"
+      - "/opt/homebrew/sbin/bossac"
+      - "/usr/local/bin/bossac"
+      - "/usr/bin/bossac"
+      - "/bin/bossac"
+      - "/usr/sbin/bossac"
+      - "/sbin/bossac"
+      - "/Library/Apple/usr/bin/bossac"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/bossac"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/bossac"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindHostTools.cmake:66 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "IMGTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "imgtool"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/imgtool"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/imgtool"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/imgtool"
+    found: "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/imgtool"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/compiler/gcc/generic.cmake:5 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindHostTools.cmake:107 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/aarch64-zephyr-elf/bin/aarch64-zephyr-elf-gcc"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/aarch64-zephyr-elf/bin/aarch64-zephyr-elf-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/compiler/gcc/generic.cmake:6 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindHostTools.cmake:107 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GCOV"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/aarch64-zephyr-elf/bin/aarch64-zephyr-elf-gcov"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/aarch64-zephyr-elf/bin/aarch64-zephyr-elf-gcov"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindDtc.cmake:19 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/dts.cmake:10 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:129 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "DTC"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dtc"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/dtc"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/dtc"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/dtc"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/dtc"
+      - "/opt/homebrew/bin/dtc"
+      - "/opt/homebrew/sbin/dtc"
+      - "/usr/local/bin/dtc"
+      - "/usr/bin/dtc"
+      - "/bin/dtc"
+      - "/usr/sbin/dtc"
+      - "/sbin/dtc"
+      - "/Library/Apple/usr/bin/dtc"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/dtc"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/dtc"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/compiler/gcc/target.cmake:9 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:102 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/compiler/gcc/target.cmake:27 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:102 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:5 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:6 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:7 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_AS"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-as"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-as"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:8 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:9 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:10 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:11 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:12 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:14 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GDB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb-py"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb-py"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/bintools/gnu/target.cmake:26 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/FindTargetTools.cmake:105 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GDB_NO_PY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/uname"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/uname"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/uname"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    message: |
+      The target system is: Generic - 3.5.0 - arm
+      The host system is: Darwin - 25.3.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Program used to build from build.ninja files."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ninja-build"
+      - "ninja"
+      - "samu"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/ninja-build"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/ninja"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/samu"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/ninja-build"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/ninja"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/samu"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/ninja-build"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/ninja"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/samu"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/ninja-build"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/ninja"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/samu"
+      - "/opt/homebrew/bin/ninja-build"
+    found: "/opt/homebrew/bin/ninja"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/4.2.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-dlltool"
+      - "/usr/local/bin/arm-zephyr-eabi-dlltool"
+      - "/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/bin/arm-zephyr-eabi-dlltool"
+      - "/usr/sbin/arm-zephyr-eabi-dlltool"
+      - "/sbin/arm-zephyr-eabi-dlltool"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-dlltool"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/dlltool"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/opt/homebrew/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/Library/Apple/usr/bin/dlltool"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/dlltool"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/dlltool"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-addr2line"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-tapi"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-tapi"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-tapi"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-tapi"
+      - "/usr/local/bin/arm-zephyr-eabi-tapi"
+      - "/usr/bin/arm-zephyr-eabi-tapi"
+      - "/bin/arm-zephyr-eabi-tapi"
+      - "/usr/sbin/arm-zephyr-eabi-tapi"
+      - "/sbin/arm-zephyr-eabi-tapi"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-tapi"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-tapi"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-tapi"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/tapi"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/Library/Apple/usr/bin/tapi"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/tapi"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/tapi"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-12.2"
+      - "arm-zephyr-eabi-gcc-ar-12"
+      - "arm-zephyr-eabi-gcc-ar12"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar12"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "arm-zephyr-eabi-gcc-ranlib-12"
+      - "arm-zephyr-eabi-gcc-ranlib12"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/4.2.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-12.2"
+      - "arm-zephyr-eabi-gcc-ar-12"
+      - "arm-zephyr-eabi-gcc-ar12"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar12"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:128 (project)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "arm-zephyr-eabi-gcc-ranlib-12"
+      - "arm-zephyr-eabi-gcc-ranlib12"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib12"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:61 (_cmake_find_compiler)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:134 (enable_language)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER"
+    description: "ASM compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:134 (enable_language)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-zephyr-eabi-gcc (Zephyr SDK 0.16.4) 12.2.0
+      Copyright (C) 2022 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:134 (enable_language)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-"
+      - "arm-zephyr-eabi-gcc-ar-"
+      - "arm-zephyr-eabi-gcc-ar"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ar-"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/kernel.cmake:134 (enable_language)"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-"
+      - "arm-zephyr-eabi-gcc-ranlib-"
+      - "arm-zephyr-eabi-gcc-ranlib"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/homebrew/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Library/Apple/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/arm-zephyr-eabi-gcc-ranlib-"
+    found: "/Users/tkd_usk/zephyr-sdk-0.16.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/reports/CMakeLists.txt:70 (find_program)"
+    mode: "program"
+    variable: "PUNCOVER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "puncover"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/puncover"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/puncover"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/puncover"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/puncover"
+      - "/opt/homebrew/bin/puncover"
+      - "/opt/homebrew/sbin/puncover"
+      - "/usr/local/bin/puncover"
+      - "/usr/bin/puncover"
+      - "/bin/puncover"
+      - "/usr/sbin/puncover"
+      - "/sbin/puncover"
+      - "/Library/Apple/usr/bin/puncover"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/puncover"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/puncover"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/tkd_usk/src/zmk-workspace-dya/zephyr/cmake/reports/CMakeLists.txt:87 (find_program)"
+    mode: "program"
+    variable: "PAHOLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pahole"
+    candidate_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
+    searched_directories:
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/bin/pahole"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/sbin/pahole"
+      - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr/pahole"
+      - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin/pahole"
+      - "/opt/homebrew/bin/pahole"
+      - "/opt/homebrew/sbin/pahole"
+      - "/usr/local/bin/pahole"
+      - "/usr/bin/pahole"
+      - "/bin/pahole"
+      - "/usr/sbin/pahole"
+      - "/sbin/pahole"
+      - "/Library/Apple/usr/bin/pahole"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin/pahole"
+      - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/pahole"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Zephyr"
+    configs:
+      -
+        filename: "ZephyrConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyr-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      hints:
+        - "../zephyr"
+      names:
+        - "Zephyr"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/build/left/CMakeFiles/pkgRedirects/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.venv/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/src/zmk-workspace-dya/.venv/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/Users/tkd_usk/src/zmk-config-conductor/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake"
+      mode: "config"
+      version: "3.5.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/tkd_usk/zephyr-sdk-0.16.4/sysroots/arm64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/Users/tkd_usk/src/zmk-workspace-dya/.venv/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/bin"
+        - "/Users/tkd_usk/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...

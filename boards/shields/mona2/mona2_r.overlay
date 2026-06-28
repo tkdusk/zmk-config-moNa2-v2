@@ -109,22 +109,15 @@
         zmk,studio-rpc-uart = &snippet_studio_rpc_usb_uart;
     };
 
-    gesture_keybind: gesture_keybind {
-        compatible = "zmk,input-processor-keybind";
+    trackball_gestures: trackball_gestures {
+        compatible = "zmk,input-processor-gestures";
         #input-processor-cells = <0>;
-        bindings = <&kp LC(RIGHT)>,
-                   <&kp LC(LEFT)>,
-                   <&kp LC(UP)>,
-                   <&kp LC(DOWN)>;
-        mode = <1>;
-        tick = <10>;
-        x-tick = <25>;
-        y-tick = <6>;
-        tap-ms = <10>;
-        wait-ms = <0>;
-        threshold = <1>;
-        track_remainders;
-        max_threshold = <2000>;
+        threshold = <60>;
+        timeout-ms = <180>;
+        cooldown-ms = <200>;
+        tap-ms = <30>;
+        layer-id = <5>;
+        positions = <7 18 17 19>; /* up=I(7), down=K(18), left=J(17), right=L(19) */
         active-layers = <0x00000020>; /* bit5 = layer 5 (gesture layer) */
     };
 };
@@ -146,5 +139,5 @@
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
-    input-processors = <&gesture_keybind &mouse_runtime_input_processor &scroll_runtime_input_processor>;
+    input-processors = <&trackball_gestures &mouse_runtime_input_processor &scroll_runtime_input_processor>;
 };

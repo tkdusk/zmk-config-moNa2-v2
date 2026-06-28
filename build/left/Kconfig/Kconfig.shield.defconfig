@@ -1,0 +1,7 @@
+osource "/Users/tkd_usk/src/zmk-config-moNa2-v2-dya/boards/shields/*/Kconfig.defconfig"
+osource "/Users/tkd_usk/src/zmk-modules-mona2/zmk-rgbled-widget/boards/shields/*/Kconfig.defconfig"
+osource "/Users/tkd_usk/src/zmk-modules-dya/zmk-module-ble-management/boards/shields/*/Kconfig.defconfig"
+osource "/Users/tkd_usk/src/zmk-modules-dya/zmk-module-settings-rpc/boards/shields/*/Kconfig.defconfig"
+osource "/Users/tkd_usk/src/zmk-modules-dya/zmk-module-runtime-input-processor/boards/shields/*/Kconfig.defconfig"
+osource "/Users/tkd_usk/src/zmk-modules-dya/zmk-behavior-runtime-sensor-rotate/boards/shields/*/Kconfig.defconfig"
+osource "/Users/tkd_usk/src/zmk-workspace-dya/zmk/app/boards/shields/*/Kconfig.defconfig"
