@@ -169,10 +169,10 @@
 
         gesture_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &kp LC(UP)      &trans          &trans
-&trans  &trans  &trans  &trans  &trans           &trans     &trans  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &trans     &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

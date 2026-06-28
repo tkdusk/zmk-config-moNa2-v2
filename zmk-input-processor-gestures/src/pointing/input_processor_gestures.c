@@ -3,7 +3,9 @@
  *
  * SPDX-License-Identifier: MIT
  *
- * Based on pite1222/zmk gesture input processor, with active-layers support.
+ * Based on pite1222/zmk gesture input processor.
+ * Uses direct bindings (not keymap lookup) to avoid race conditions
+ * with ZMK Studio runtime keymap writes.
  */
 
 #define DT_DRV_COMPAT zmk_input_processor_gestures
@@ -23,10 +25,10 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/virtual_key_position.h>
 
 enum gesture_direction {
-    GESTURE_UP,
-    GESTURE_DOWN,
-    GESTURE_LEFT,
-    GESTURE_RIGHT,
+    GESTURE_UP    = 0,
+    GESTURE_DOWN  = 1,
+    GESTURE_LEFT  = 2,
+    GESTURE_RIGHT = 3,
     GESTURE_DIRECTION_COUNT,
 };
 
@@ -39,8 +41,7 @@ struct gestures_config {
     uint16_t timeout_ms;
     uint16_t cooldown_ms;
     uint16_t tap_ms;
-    uint8_t layer_id;
-    uint16_t positions[GESTURE_DIRECTION_COUNT];
+    const struct zmk_behavior_binding *bindings;
     uint32_t active_layers;
 };
 
@@ -79,11 +80,7 @@ static int gestures_direction(const struct gestures_config *cfg,
 
 static int gestures_queue_tap(const struct gestures_config *cfg, int direction,
                               struct zmk_input_processor_state *state) {
-    const struct zmk_behavior_binding *binding =
-        zmk_keymap_get_layer_binding_at_idx(cfg->layer_id, cfg->positions[direction]);
-    if (binding == NULL) {
-        return -EINVAL;
-    }
+    const struct zmk_behavior_binding *binding = &cfg->bindings[direction];
 
     struct zmk_behavior_binding_event event = {
         .position = ZMK_VIRTUAL_KEY_POSITION_BEHAVIOR_INPUT_PROCESSOR(
@@ -96,10 +93,16 @@ static int gestures_queue_tap(const struct gestures_config *cfg, int direction,
 
     int ret = zmk_behavior_queue_add(&event, *binding, true, cfg->tap_ms);
     if (ret < 0) {
-        return ret;
+        LOG_WRN("gesture: failed to queue press (%d), skipping", ret);
+        return 0;
     }
 
-    return zmk_behavior_queue_add(&event, *binding, false, 0);
+    ret = zmk_behavior_queue_add(&event, *binding, false, 0);
+    if (ret < 0) {
+        LOG_WRN("gesture: failed to queue release (%d)", ret);
+    }
+
+    return 0;
 }
 
 static int gestures_handle_event(const struct device *dev, struct input_event *event,
@@ -160,14 +163,9 @@ static int gestures_handle_event(const struct device *dev, struct input_event *e
 
     int direction = gestures_direction(cfg, data);
     if (direction >= 0) {
-        int ret = gestures_queue_tap(cfg, direction, state);
+        gestures_queue_tap(cfg, direction, state);
         gestures_reset(data);
         data->cooldown_until = now + cfg->cooldown_ms;
-
-        if (ret < 0) {
-            LOG_ERR("Failed to queue gesture behavior: %d", ret);
-            return ret;
-        }
     }
 
     return ZMK_INPUT_PROC_STOP;
@@ -179,10 +177,14 @@ static const struct zmk_input_processor_driver_api gestures_driver_api = {
 
 static int gestures_init(const struct device *dev) { return 0; }
 
+#define TRANSFORMED_BINDINGS(n)                                                                \
+    {LISTIFY(DT_INST_PROP_LEN(n, bindings), ZMK_KEYMAP_EXTRACT_BINDING, (, ), DT_DRV_INST(n))}
+
 #define GESTURES_INST(n)                                                                       \
-    BUILD_ASSERT(DT_INST_PROP_LEN(n, positions) == GESTURE_DIRECTION_COUNT,                   \
-                 "Gesture processors need exactly four positions: up, down, left, right");    \
+    BUILD_ASSERT(DT_INST_PROP_LEN(n, bindings) == GESTURE_DIRECTION_COUNT,                    \
+                 "Gesture processor needs exactly 4 bindings: up, down, left, right");        \
     static struct gestures_data gestures_data_##n = {};                                        \
+    static struct zmk_behavior_binding gestures_bindings_##n[] = TRANSFORMED_BINDINGS(n);     \
     static const struct gestures_config gestures_config_##n = {                                \
         .index = n,                                                                            \
         .type = DT_INST_PROP_OR(n, type, INPUT_EV_REL),                                       \
@@ -192,8 +194,7 @@ static int gestures_init(const struct device *dev) { return 0; }
         .timeout_ms = DT_INST_PROP_OR(n, timeout_ms, 180),                                    \
         .cooldown_ms = DT_INST_PROP_OR(n, cooldown_ms, 220),                                  \
         .tap_ms = DT_INST_PROP_OR(n, tap_ms, 30),                                             \
-        .layer_id = DT_INST_PROP(n, layer_id),                                                \
-        .positions = DT_INST_PROP(n, positions),                                              \
+        .bindings = gestures_bindings_##n,                                                     \
         .active_layers = DT_INST_PROP_OR(n, active_layers, 0),                                \
     };                                                                                         \
     DEVICE_DT_INST_DEFINE(n, gestures_init, NULL, &gestures_data_##n,                         \
