@@ -3,9 +3,9 @@
  *
  * SPDX-License-Identifier: MIT
  *
- * Based on pite1222/zmk gesture input processor.
- * Uses direct bindings (not keymap lookup) to avoid race conditions
- * with ZMK Studio runtime keymap writes.
+ * Gesture detection with k_work_delayable for safe behavior invocation.
+ * Behavior is fired from the system work queue (not the input processor
+ * context) to avoid deadlocks with BLE/ZMK Studio in cormoran fork.
  */
 
 #define DT_DRV_COMPAT zmk_input_processor_gestures
@@ -22,6 +22,8 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/behavior.h>
 #include <zmk/keymap.h>
 #include <zmk/virtual_key_position.h>
+#include <zmk/event_manager.h>
+#include <zmk/events/position_state_changed.h>
 
 enum gesture_direction {
     GESTURE_UP    = 0,
@@ -50,6 +52,13 @@ struct gestures_data {
     int64_t started_at;
     int64_t cooldown_until;
     bool pending;
+
+    /* Work items for deferred press/release (avoids deadlock in input context) */
+    const struct device *dev;
+    uint8_t device_index;
+    int fired_direction;
+    struct k_work_delayable press_work;
+    struct k_work_delayable release_work;
 };
 
 static int32_t abs32(int32_t value) { return value < 0 ? -value : value; }
@@ -77,33 +86,60 @@ static int gestures_direction(const struct gestures_config *cfg,
     return data->x < 0 ? GESTURE_LEFT : GESTURE_RIGHT;
 }
 
-static int gestures_fire(const struct gestures_config *cfg, int direction,
-                         struct zmk_input_processor_state *state) {
-    const struct zmk_behavior_binding *binding = &cfg->bindings[direction];
-
-    struct zmk_behavior_binding_event event = {
+static struct zmk_behavior_binding_event make_event(const struct gestures_data *data,
+                                                     const struct gestures_config *cfg) {
+    struct zmk_behavior_binding_event ev = {
         .position = ZMK_VIRTUAL_KEY_POSITION_BEHAVIOR_INPUT_PROCESSOR(
-            state->input_device_index, cfg->index),
+            data->device_index, cfg->index),
         .timestamp = k_uptime_get(),
 #if IS_ENABLED(CONFIG_ZMK_SPLIT)
         .source = ZMK_POSITION_STATE_CHANGE_SOURCE_LOCAL,
 #endif
     };
+    return ev;
+}
 
-    /* Use synchronous invoke to guarantee press and release are always paired.
-       zmk_behavior_queue_add is avoided because a failed release leaves the key stuck. */
-    int ret = zmk_behavior_invoke_binding(binding, event, true);
-    if (ret < 0) {
-        LOG_WRN("gesture: press failed (%d)", ret);
-        return ret;
+static void release_work_cb(struct k_work *work) {
+    struct k_work_delayable *d = k_work_delayable_from_work(work);
+    struct gestures_data *data = CONTAINER_OF(d, struct gestures_data, release_work);
+    const struct gestures_config *cfg = data->dev->config;
+
+    if (data->fired_direction < 0 || data->fired_direction >= GESTURE_DIRECTION_COUNT) {
+        return;
     }
 
-    ret = zmk_behavior_invoke_binding(binding, event, false);
+    const struct zmk_behavior_binding *binding = &cfg->bindings[data->fired_direction];
+    struct zmk_behavior_binding_event ev = make_event(data, cfg);
+
+    int ret = zmk_behavior_invoke_binding(binding, ev, false);
     if (ret < 0) {
         LOG_WRN("gesture: release failed (%d)", ret);
     }
 
-    return 0;
+    data->fired_direction = -1;
+}
+
+static void press_work_cb(struct k_work *work) {
+    struct k_work_delayable *d = k_work_delayable_from_work(work);
+    struct gestures_data *data = CONTAINER_OF(d, struct gestures_data, press_work);
+    const struct gestures_config *cfg = data->dev->config;
+
+    if (data->fired_direction < 0 || data->fired_direction >= GESTURE_DIRECTION_COUNT) {
+        return;
+    }
+
+    const struct zmk_behavior_binding *binding = &cfg->bindings[data->fired_direction];
+    struct zmk_behavior_binding_event ev = make_event(data, cfg);
+
+    int ret = zmk_behavior_invoke_binding(binding, ev, true);
+    if (ret < 0) {
+        LOG_WRN("gesture: press failed (%d), skipping release", ret);
+        data->fired_direction = -1;
+        return;
+    }
+
+    /* Schedule release after tap_ms; fired_direction cleared in release_work_cb */
+    k_work_schedule(&data->release_work, K_MSEC(cfg->tap_ms));
 }
 
 static int gestures_handle_event(const struct device *dev, struct input_event *event,
@@ -164,7 +200,11 @@ static int gestures_handle_event(const struct device *dev, struct input_event *e
 
     int direction = gestures_direction(cfg, data);
     if (direction >= 0) {
-        gestures_fire(cfg, direction, state);
+        /* Store context and defer behavior invocation to system work queue */
+        data->device_index = state->input_device_index;
+        data->fired_direction = direction;
+        k_work_schedule(&data->press_work, K_NO_WAIT);
+
         gestures_reset(data);
         data->cooldown_until = now + cfg->cooldown_ms;
     }
@@ -176,7 +216,14 @@ static const struct zmk_input_processor_driver_api gestures_driver_api = {
     .handle_event = gestures_handle_event,
 };
 
-static int gestures_init(const struct device *dev) { return 0; }
+static int gestures_init(const struct device *dev) {
+    struct gestures_data *data = dev->data;
+    data->dev = dev;
+    data->fired_direction = -1;
+    k_work_init_delayable(&data->press_work, press_work_cb);
+    k_work_init_delayable(&data->release_work, release_work_cb);
+    return 0;
+}
 
 #define TRANSFORMED_BINDINGS(n)                                                                \
     {LISTIFY(DT_INST_PROP_LEN(n, bindings), ZMK_KEYMAP_EXTRACT_BINDING, (, ), DT_DRV_INST(n))}
