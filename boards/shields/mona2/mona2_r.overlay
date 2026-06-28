@@ -112,12 +112,14 @@
     trackball_gestures: trackball_gestures {
         compatible = "zmk,input-processor-gestures";
         #input-processor-cells = <0>;
+        bindings = <&kp LC(UP)>,
+                   <&kp LC(DOWN)>,
+                   <&kp LC(LEFT)>,
+                   <&kp LC(RIGHT)>;
         threshold = <60>;
         timeout-ms = <180>;
         cooldown-ms = <200>;
         tap-ms = <30>;
-        layer-id = <5>;
-        positions = <7 18 17 19>; /* up=I(7), down=K(18), left=J(17), right=L(19) */
         active-layers = <0x00000020>; /* bit5 = layer 5 (gesture layer) */
     };
 };
