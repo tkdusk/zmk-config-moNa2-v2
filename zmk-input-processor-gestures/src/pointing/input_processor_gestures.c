@@ -20,7 +20,6 @@
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include <zmk/behavior.h>
-#include <zmk/behavior_queue.h>
 #include <zmk/keymap.h>
 #include <zmk/virtual_key_position.h>
 
@@ -78,8 +77,8 @@ static int gestures_direction(const struct gestures_config *cfg,
     return data->x < 0 ? GESTURE_LEFT : GESTURE_RIGHT;
 }
 
-static int gestures_queue_tap(const struct gestures_config *cfg, int direction,
-                              struct zmk_input_processor_state *state) {
+static int gestures_fire(const struct gestures_config *cfg, int direction,
+                         struct zmk_input_processor_state *state) {
     const struct zmk_behavior_binding *binding = &cfg->bindings[direction];
 
     struct zmk_behavior_binding_event event = {
@@ -91,15 +90,17 @@ static int gestures_queue_tap(const struct gestures_config *cfg, int direction,
 #endif
     };
 
-    int ret = zmk_behavior_queue_add(&event, *binding, true, cfg->tap_ms);
+    /* Use synchronous invoke to guarantee press and release are always paired.
+       zmk_behavior_queue_add is avoided because a failed release leaves the key stuck. */
+    int ret = zmk_behavior_invoke_binding(binding, event, true);
     if (ret < 0) {
-        LOG_WRN("gesture: failed to queue press (%d), skipping", ret);
-        return 0;
+        LOG_WRN("gesture: press failed (%d)", ret);
+        return ret;
     }
 
-    ret = zmk_behavior_queue_add(&event, *binding, false, 0);
+    ret = zmk_behavior_invoke_binding(binding, event, false);
     if (ret < 0) {
-        LOG_WRN("gesture: failed to queue release (%d)", ret);
+        LOG_WRN("gesture: release failed (%d)", ret);
     }
 
     return 0;
@@ -163,7 +164,7 @@ static int gestures_handle_event(const struct device *dev, struct input_event *e
 
     int direction = gestures_direction(cfg, data);
     if (direction >= 0) {
-        gestures_queue_tap(cfg, direction, state);
+        gestures_fire(cfg, direction, state);
         gestures_reset(data);
         data->cooldown_until = now + cfg->cooldown_ms;
     }
