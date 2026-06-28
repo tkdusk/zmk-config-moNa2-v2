@@ -19,7 +19,7 @@ properties:
     type: int
   threshold:
     type: int
-    description: "Minimum displacement (in REL units) to trigger a gesture (default: 120)"
+    description: "Minimum displacement (REL units) to trigger a gesture (default: 120)"
   timeout-ms:
     type: int
     description: "Time window in ms to accumulate displacement (default: 180)"
@@ -29,14 +29,10 @@ properties:
   tap-ms:
     type: int
     description: "Duration in ms for the triggered key tap (default: 30)"
-  layer-id:
-    type: int
+  bindings:
+    type: phandle-array
     required: true
-    description: "Keymap layer to read behavior bindings from"
-  positions:
-    type: array
-    required: true
-    description: "Key positions for [up, down, left, right] gestures"
+    description: "Behaviors to invoke: [up, down, left, right]"
   active-layers:
     type: int
-    description: "Bitmask of layers on which this processor is active. 0 (default) means active on all layers."
+    description: "Bitmask of layers on which this processor is active. 0 (default) = all layers."
